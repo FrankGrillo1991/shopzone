@@ -33,3 +33,9 @@ nav {
 .nav-logo:hover {
     outline: 1px solid white;
 }
+
+.location {
+    height: 100%;
+    font-size: .7rem;
+    padding: .5rem 1rem;
+}
