@@ -39,3 +39,12 @@ nav {
     font-size: .7rem;
     padding: .5rem 1rem;
 }
+
+.location:hover {
+    outline: 1px solid white;
+}
+
+.location-icon {
+    display: flex;
+    align-items: center;
+}
