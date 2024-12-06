@@ -388,3 +388,14 @@ main {
     gap: .5rem;
     margin-left: 3rem;
 }
+
+.country-info .options select {
+    font-size: .5rem;
+    text-decoration: none;
+    color: #cccccc;
+    background: transparent;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    padding: .5rem;
+}
+
