@@ -288,3 +288,8 @@ main {
     margin-bottom: 2rem;
 }
 
+.carousel .text a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007185;
+}
