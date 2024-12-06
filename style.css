@@ -241,3 +241,12 @@ main {
 .carousel .slides-container::-webkit-scrollbar {
     display: none;
 }
+
+.slides-container .slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 100%;
+    overflow: hidden;
+}
