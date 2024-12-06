@@ -197,3 +197,7 @@ nav {
 .all-logo:hover {
     outline: 1px solid white;
 }
+
+.nav-options .options {
+    display: flex;
+}
