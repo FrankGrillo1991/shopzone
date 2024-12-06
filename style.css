@@ -97,3 +97,8 @@ nav {
     align-items: center;
     margin: 0 1rem;
 }
+
+.language-option {
+    display: flex;
+    padding: .5rem .5rem;
+}
