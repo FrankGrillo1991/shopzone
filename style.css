@@ -29,3 +29,7 @@ nav {
     width: 100px;
     padding: .5rem;
 }
+
+.nav-logo:hover {
+    outline: 1px solid white;
+}
