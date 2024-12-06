@@ -277,3 +277,14 @@ main {
 .slide .next {
     right: 1rem;
 }
+
+.carousel .text {
+    width: 95%;
+    position: absolute;
+    text-align: center;
+    font-size: .7rem;
+    background-color: #f5f6f6;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
