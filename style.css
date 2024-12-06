@@ -416,3 +416,9 @@ main {
     margin-left: 1rem;
 }
 
+/* Small Devices */
+@media screen and (max-width: 900px) {
+    :root {
+        font-size: 2vw;
+    }
+}
