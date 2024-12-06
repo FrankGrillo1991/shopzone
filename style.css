@@ -383,3 +383,8 @@ main {
     width: 50px;
 }
 
+.country-info .options {
+    display: flex;
+    gap: .5rem;
+    margin-left: 3rem;
+}
