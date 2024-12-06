@@ -270,3 +270,7 @@ main {
     margin: 1rem;
 }
 
+.slide .prev {
+    left: 1rem;
+}
+
