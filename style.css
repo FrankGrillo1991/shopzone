@@ -349,3 +349,6 @@ main {
     color: white;
 }
 
+.footer-links ul {
+    margin-top: 3rem;
+}
