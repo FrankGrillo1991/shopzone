@@ -8,3 +8,12 @@ body {
     height: 100vh;
     font-family: Arial;
 }
+
+/* Header */
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #0f1111;
+    color: white;
+}
