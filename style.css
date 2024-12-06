@@ -352,3 +352,7 @@ main {
 .footer-links ul {
     margin-top: 3rem;
 }
+
+.footer-links ul p {
+    font-weight: bold;
+}
