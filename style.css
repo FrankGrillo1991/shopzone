@@ -185,3 +185,15 @@ nav {
 .nav-options * {
     cursor: pointer;
 }
+
+.all-logo {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    padding: .5rem;
+    margin-left: 2rem;
+}
+
+.all-logo:hover {
+    outline: 1px solid white;
+}
