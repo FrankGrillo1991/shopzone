@@ -237,3 +237,7 @@ main {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
 }
+
+.carousel .slides-container::-webkit-scrollbar {
+    display: none;
+}
