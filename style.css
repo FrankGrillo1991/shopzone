@@ -56,3 +56,7 @@ nav {
     border-radius: 5px;
     margin-left: 1rem;
 }
+
+.nav-center:hover {
+    outline: 2px solid rgb(232, 176, 73);
+}
