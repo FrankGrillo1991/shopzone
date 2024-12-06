@@ -302,3 +302,15 @@ main {
     padding: 0 2rem 2rem 2rem;
 }
 
+.item-card {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 300px;
+    gap: 1rem;
+    font-size: .7rem;
+    background-color: white;
+    padding: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+}
