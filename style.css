@@ -102,3 +102,11 @@ nav {
     display: flex;
     padding: .5rem .5rem;
 }
+
+.language-option:hover {
+    outline: 1px solid white;
+}
+
+.flag {
+    width: 20px;
+}
