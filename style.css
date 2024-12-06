@@ -91,3 +91,9 @@ nav {
     padding: .7rem .5rem;
     outline: none;
 }
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
