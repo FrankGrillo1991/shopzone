@@ -69,3 +69,13 @@ nav {
     border-radius: 5px 0 0 5px;
     outline: none;
 }
+
+.search-dropdown:focus {
+    outline: none;
+}
+
+.search-box {
+    font-size: 1rem;
+    flex-grow: 1;
+    padding: .5rem;
+}
