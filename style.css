@@ -341,3 +341,11 @@ main {
     background-color: #37475A;
 }
 
+.footer-links {
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #232F3E;
+    color: white;
+}
+
