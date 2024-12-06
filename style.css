@@ -209,3 +209,12 @@ nav {
 .nav-options .options p:hover {
     outline: 1px solid white;
 }
+
+/* Main */
+main {
+    width: min(1550px, 100%);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
