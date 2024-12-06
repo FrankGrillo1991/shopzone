@@ -201,3 +201,11 @@ nav {
 .nav-options .options {
     display: flex;
 }
+
+.nav-options .options p {
+    padding: 0.5rem;
+}
+
+.nav-options .options p:hover {
+    outline: 1px solid white;
+}
