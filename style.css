@@ -135,3 +135,11 @@ nav {
     font-size: .5rem;
     margin-left: 5px;
 }
+
+.select-account {
+    font-size: .7rem;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border: none;
+}
