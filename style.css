@@ -274,3 +274,6 @@ main {
     left: 1rem;
 }
 
+.slide .next {
+    right: 1rem;
+}
