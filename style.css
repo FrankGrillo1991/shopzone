@@ -17,3 +17,10 @@ nav {
     background-color: #0f1111;
     color: white;
 }
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: .5rem;
+}
