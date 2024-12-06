@@ -143,3 +143,12 @@ nav {
     color: white;
     border: none;
 }
+
+.order-option {
+    padding: .5rem .5rem;
+}
+
+.order-option:hover {
+    outline: 1px solid white;
+}
+
