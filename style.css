@@ -152,3 +152,7 @@ nav {
     outline: 1px solid white;
 }
 
+.order-option .bottom-text {
+    font-size: .7rem;
+    font-weight: bold;
+}
