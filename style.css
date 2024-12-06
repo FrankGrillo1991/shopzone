@@ -164,3 +164,11 @@ nav {
     font-weight: 700;
     padding: .5rem .5rem;
 }
+
+.cart-option:hover {
+    outline: 1px solid white;
+}
+
+.cart-logo i {
+    width: 20px;
+}
