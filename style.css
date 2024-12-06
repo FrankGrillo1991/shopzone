@@ -322,3 +322,9 @@ main {
     object-fit: cover;
 }
 
+.item-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007185;
+}
+
