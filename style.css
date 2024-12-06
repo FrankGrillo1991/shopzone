@@ -314,3 +314,11 @@ main {
     cursor: pointer;
     overflow: hidden;
 }
+
+.item-card img {
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
