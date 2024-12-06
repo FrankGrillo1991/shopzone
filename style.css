@@ -369,3 +369,13 @@ main {
     text-decoration: underline;
 }
 
+.country-info {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232F3E;
+    color: white;
+    border-top: 0.5px solid #84868878;
+}
+
