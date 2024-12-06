@@ -131,3 +131,7 @@ nav {
     outline: 1px solid white;
 }
 
+.account-option .top-text {
+    font-size: .5rem;
+    margin-left: 5px;
+}
