@@ -379,3 +379,7 @@ main {
     border-top: 0.5px solid #84868878;
 }
 
+.country-info .logo img {
+    width: 50px;
+}
+
