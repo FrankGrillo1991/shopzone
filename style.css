@@ -356,3 +356,16 @@ main {
 .footer-links ul p {
     font-weight: bold;
 }
+
+.footer-links ul a {
+    display: block;
+    font-size: .7rem;
+    color: #dddddd;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.footer-links ul a:hover {
+    text-decoration: underline;
+}
+
