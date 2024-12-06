@@ -156,3 +156,11 @@ nav {
     font-size: .7rem;
     font-weight: bold;
 }
+
+.cart-option {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: .5rem .5rem;
+}
