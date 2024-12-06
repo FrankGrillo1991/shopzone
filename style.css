@@ -421,4 +421,11 @@ main {
     :root {
         font-size: 2vw;
     }
+
+    /* Header */
+    nav {
+        height: 5vw;
+    }
+
+    
 }
