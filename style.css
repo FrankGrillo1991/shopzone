@@ -110,3 +110,11 @@ nav {
 .flag {
     width: 20px;
 }
+
+.select-language {
+    font-size: .7rem;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: none;
+}
