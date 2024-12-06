@@ -60,3 +60,12 @@ nav {
 .nav-center:hover {
     outline: 2px solid rgb(232, 176, 73);
 }
+
+.search-dropdown {
+    width: 5rem;
+    font-size: 1rem;
+    background-color: rgb(210, 208, 208);
+    padding: .5rem;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
