@@ -172,3 +172,16 @@ nav {
 .cart-logo i {
     width: 20px;
 }
+
+.nav-options {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    background-color: #222f3d;
+    color: white;
+    justify-content: start;
+}
+
+.nav-options * {
+    cursor: pointer;
+}
