@@ -1,0 +1,1 @@
+Amazon Clone developed with HTML & CSS
