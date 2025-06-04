@@ -1,16 +1,34 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    font-family: Arial;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
-/* Header */
-nav {
+a {
+    color: #262626;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Nav */
+nav { /* Changed from .main-nav to nav for broader scope */
     height: 60px;
     display: flex;
     align-items: center;
@@ -25,14 +43,35 @@ nav {
     margin-left: .5rem;
 }
 
-.nav-logo img {
-    width: 100px;
-    padding: .5rem;
+/* ShopZone Logo Styling */
+.shopzone-logo-link {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit color from parent */
+    display: flex; /* Make the link a flex container */
+    align-items: center; /* Center items vertically */
+    padding: .5rem; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners for hover effect */
 }
 
-.nav-logo:hover {
-    outline: 1px solid white;
+.shopzone-logo-link:hover {
+    outline: 1px solid white; /* Hover effect for the logo area */
 }
+
+.shopzone-logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif; /* Use Inter for the logo text */
+    font-size: 24px; /* Base size for the logo */
+    font-weight: 700;
+    color: #fff; /* White text color for dark navbar */
+}
+
+.shopzone-logo .shopzone-icon {
+    color: #FF5722; /* Orange for the shopping cart icon */
+    margin-right: 8px;
+    font-size: 1.2em; /* Slightly larger icon */
+}
+
 
 .location {
     height: 100%;
@@ -68,6 +107,7 @@ nav {
     padding: .5rem;
     border-radius: 5px 0 0 5px;
     outline: none;
+    border: none; /* Remove default border */
 }
 
 .search-dropdown:focus {
@@ -78,6 +118,7 @@ nav {
     font-size: 1rem;
     flex-grow: 1;
     padding: .5rem;
+    border: none; /* Remove default border */
 }
 
 .search-box:focus {
@@ -90,6 +131,7 @@ nav {
     border-radius: 0 5px 5px 0;
     padding: .7rem .5rem;
     outline: none;
+    color: #28416c; /* Ensure icon color is visible */
 }
 
 .nav-right {
@@ -236,6 +278,7 @@ main {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
 }
 
 .carousel .slides-container::-webkit-scrollbar {
@@ -249,6 +292,7 @@ main {
     justify-content: center;
     flex: 0 0 100%;
     overflow: hidden;
+    scroll-snap-align: start; /* Snap to start of slide */
 }
 
 .slide .content {
@@ -268,6 +312,17 @@ main {
     transform: translateY(-50%);
     scale: 2;
     margin: 1rem;
+    color: #ffffff; /* Make arrows white */
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    border-radius: 50%; /* Circular background */
+    padding: 10px; /* Padding around the icon */
+    z-index: 10; /* Ensure arrows are above images */
+    transition: background-color 0.3s ease;
+}
+
+.slide .arrow:hover {
+    background-color: rgba(0, 0, 0, 0.6); /* Darker on hover */
 }
 
 .slide .prev {
@@ -286,6 +341,8 @@ main {
     background-color: #f5f6f6;
     padding: 1rem;
     margin-bottom: 2rem;
+    border-radius: 8px; /* Rounded corners for the text box */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Soft shadow */
 }
 
 .carousel .text a {
@@ -294,15 +351,16 @@ main {
     color: #007185;
 }
 
-.items-container {
+.items-container { /* Renamed from .home-cards to .items-container */
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     background-color: #c9cbcf82;
     padding: 0 2rem 2rem 2rem;
+    justify-content: center; /* Center items in the grid */
 }
 
-.item-card {
+.item-card { /* Renamed from .product-card to .item-card */
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -313,13 +371,22 @@ main {
     padding: 1rem;
     cursor: pointer;
     overflow: hidden;
+    border-radius: 10px; /* Rounded corners for item cards */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .item-card img {
     height: 300px;
     width: 100%;
-    border: 2px solid black;
+    border: none; /* Removed black border */
     object-fit: cover;
+    border-radius: 8px; /* Rounded corners for images */
 }
 
 .item-card a {
@@ -335,33 +402,43 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: .5rem;
+    font-size: .9rem; /* Increased font size */
     font-weight: bold;
     color: white;
     background-color: #37475A;
+    transition: background-color 0.3s ease;
+}
+
+.back-option:hover {
+    background-color: #485769; /* Darker on hover */
 }
 
 .footer-links {
-    height: 400px;
+    height: auto; /* Changed to auto for flexible height */
+    padding: 3rem 0; /* Added padding */
     display: flex;
     justify-content: space-evenly;
     background-color: #232F3E;
     color: white;
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
 }
 
 .footer-links ul {
-    margin-top: 3rem;
+    margin-top: 0; /* Removed top margin, padding handles spacing */
+    margin-bottom: 2rem; /* Add bottom margin for spacing when wrapped */
+    min-width: 150px; /* Ensure columns don't get too narrow */
 }
 
 .footer-links ul p {
     font-weight: bold;
+    margin-bottom: 1rem; /* Space below heading */
 }
 
 .footer-links ul a {
     display: block;
     font-size: .7rem;
     color: #dddddd;
-    margin-top: 1rem;
+    margin-top: .5rem; /* Smaller margin for links */
     cursor: pointer;
 }
 
@@ -377,26 +454,32 @@ main {
     background-color: #232F3E;
     color: white;
     border-top: 0.5px solid #84868878;
+    flex-wrap: wrap; /* Allow wrapping */
+    padding: 10px; /* Add padding */
 }
 
 .country-info .logo img {
     width: 50px;
+    height: auto; /* Maintain aspect ratio */
 }
 
 .country-info .options {
     display: flex;
     gap: .5rem;
     margin-left: 3rem;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center options on wrap */
 }
 
 .country-info .options select {
-    font-size: .5rem;
+    font-size: .8rem; /* Increased font size */
     text-decoration: none;
     color: #cccccc;
     background: transparent;
     border: 1px solid #848688;
     border-radius: 3px;
     padding: .5rem;
+    cursor: pointer;
 }
 
 .policies {
@@ -408,88 +491,212 @@ main {
     gap: .5rem;
     color: white;
     background-color: #131A22;
+    padding: 10px; /* Add padding */
+    text-align: center; /* Center text */
 }
 
 .pages a {
     text-decoration: none;
     color: white;
-    margin-left: 1rem;
+    margin: 0 .5rem; /* Adjusted margin */
 }
 
 /* Small Devices */
 @media screen and (max-width: 900px) {
     :root {
-        font-size: 2vw;
+        font-size: 14px; /* Set a fixed base font size for better control */
     }
 
     /* Header */
     nav {
-        height: 5vw;
+        height: auto; /* Allow nav height to adjust */
+        flex-direction: column; /* Stack nav items */
+        padding: 10px 0;
     }
 
-    .nav-logo img {
-        width: 7vw;
+    .nav-left, .nav-center, .nav-right {
+        width: 100%;
+        margin: 5px 0;
+        justify-content: center; /* Center content */
+    }
+
+    .nav-logo {
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .shopzone-logo {
+        font-size: 20px; /* Adjust logo size */
+    }
+    .shopzone-logo .shopzone-icon {
+        font-size: 1em;
+    }
+
+    .location {
+        padding: .5rem;
     }
 
     .nav-center {
-        height: 4vw;
+        margin-left: 0;
+        height: auto;
+        flex-wrap: wrap; /* Allow search bar elements to wrap */
+    }
+
+    .search-dropdown, .search-box, .search-icon {
+        flex: 1 0 auto; /* Allow elements to take full width if needed */
+        margin: 5px 0;
     }
 
     .search-dropdown {
-        width: 7vw;
+        width: 100%;
+        border-radius: 5px; /* Full rounded corners */
     }
-
     .search-box {
-        width: 1vw;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .search-icon {
+        width: 100%;
+        border-radius: 5px;
+        padding: .5rem; /* Adjust padding */
     }
 
-    .search-icon i {
-        padding: .5rem .5rem;
+    .nav-right {
+        flex-wrap: wrap; /* Allow nav-right items to wrap */
+        margin: 5px 0;
     }
 
-    .flag {
-        width: 2vw;
-    }
-
-    .cart-logo {
-        width: 3vw;
+    .language-option, .account-option, .order-option, .cart-option {
+        width: 48%; /* Two columns */
+        margin: 1%;
+        justify-content: center;
     }
 
     .nav-options {
-        height: 5vw;
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
     }
+
+    .all-logo {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-options .options {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-options .options p {
+        width: 48%; /* Two columns */
+        margin: 1%;
+        text-align: center;
+    }
+
 
     /* Main */
     .carousel {
-        height: 30vw;
+        height: 300px; /* Smaller carousel height */
     }
 
-    .arrow i {
-        height: 4vw;
+    .slide .arrow {
+        scale: 1.5; /* Smaller arrows */
+        padding: 8px;
+    }
+
+    .carousel .text {
+        font-size: .8rem;
+        padding: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    .items-container {
+        padding: 1rem;
+        gap: 1rem;
     }
 
     .item-card {
-        height: 25vw;
+        height: auto; /* Allow height to adjust */
+        flex: 1 0 100%; /* Full width cards */
+        font-size: 1rem;
     }
 
     .item-card img {
-        height: 14vw;
+        height: 200px; /* Fixed height for images on small screens */
     }
 
     /* Footer */
     .back-option {
-        height: vw;
+        height: 40px;
+        font-size: .8rem;
     }
 
     .footer-links {
-        height: 40vw;
+        flex-direction: column; /* Stack footer links */
+        align-items: center;
+        padding: 1rem 0;
     }
 
-    .country-info .logo img {
-        width: 7vw;
+    .footer-links ul {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .country-info {
+        flex-direction: column; /* Stack country info */
+        height: auto;
+        padding: 10px;
+    }
+    .country-info .options {
+        margin-left: 0;
+        margin-top: 10px;
     }
 
     .policies {
-        height: 8vw;
+        height: auto;
+        padding: 10px;
+    }
+    .pages a {
+        margin: 0 .3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .shopzone-logo {
+        font-size: 18px;
+    }
+    .shopzone-logo .shopzone-icon {
+        font-size: 0.8em;
+    }
+
+    .carousel {
+        height: 250px;
+    }
+
+    .item-card {
+        font-size: .9rem;
+    }
+
+    .item-card img {
+        height: 180px;
+    }
+
+    .cta-section, .newsletter {
+        height: 250px; /* Smaller height for banners */
+        padding: 0 15px;
+    }
+    .cta-section .content, .newsletter .content {
+        width: 95%; /* Wider content area */
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .language-option, .account-option, .order-option, .cart-option {
+        width: 100%; /* Stack all nav-right items */
+        margin: 5px 0;
+    }
+    .nav-options .options p {
+        width: 100%; /* Stack all nav-options items */
     }
 }

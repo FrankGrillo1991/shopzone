@@ -10,7 +10,7 @@
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity=
     "sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Amazon Clone</title>
+    <title>ShopZone - Your Online Marketplace</title>
 </head>
 
 <body>
@@ -18,13 +18,19 @@
         <nav>
             <div class="nav-left">
                 <div class="nav-logo">
-                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326183545/amazon.png">
+                    <!-- ShopZone Logo -->
+                    <a href="#" class="shopzone-logo-link">
+                        <div class="shopzone-logo">
+                            <i class="fas fa-shopping-cart shopzone-icon"></i>
+                            <span class="shopzone-text">ShopZone</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="location">
                     <p class="top-text">Deliver to</p>
                     <div class="location-icon">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p class="bottom-text">India</p>
+                        <p class="bottom-text">United States</p>
                     </div>
                 </div>
             </div>
@@ -32,16 +38,19 @@
             <div class="nav-center">
                 <select class="search-dropdown">
                     <option>All</option>
-                    <option>All Departments</option>
-                    <option>Arts & Crafts</option>
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                    <option>Home & Kitchen</option>
+                    <option>Books</option>
+                    <option>Sports & Outdoors</option>
                 </select>
-                <input type="text" placeholder="Search Amazon" class="search-box">
+                <input type="text" placeholder="Search ShopZone" class="search-box">
                 <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #28416c"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
 
-            <div class="nev-right">
+            <div class="nav-right">
                 <div class="language-option">
                     <div class="flag">
                         <i class="fa-regular fa-flag"></i>
@@ -49,7 +58,7 @@
                     <select class="select-language">
                         <option value="lan">EN</option>
                         <option value="lan">ES</option>
-                        <option value="lan">AR</option>
+                        <option value="lan">FR</option>
                     </select>
                 </div>
 
@@ -59,13 +68,13 @@
                     </p>
                     <select class="select-account">
                         <option value="Account">
-                            Account & Lists
+                            Account & Orders
                         </option>
                         <option value="Account">
-                            Account & Lists
+                            Your Wishlist
                         </option>
                         <option value="Account">
-                            Account & Lists
+                            Your Recommendations
                         </option>
                     </select>
                 </div>
@@ -91,15 +100,15 @@
         <div class="nav-options">
             <div class="all-logo">
                 <i class="fa-solid fa-bars"></i>
-                <p class="list">All</p>
+                <p class="list">All Categories</p>
             </div>
 
             <div class="options">
                 <p>Today's Deals</p>
                 <p>Customer Service</p>
-                <p>Registry</p>
                 <p>Gift Cards</p>
-                <p> Sell</p>
+                <p>Sell on ShopZone</p>
+                <p>Registry</p>
             </div>
         </div>
     </header>
@@ -109,113 +118,112 @@
             <div class="slides-container">
                 <div id="slide1" class="slide">
                     <div class="content">
-                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122916/image11.jpg">
+                        <img src="https://placehold.co/1550x500/FF5722/FFFFFF?text=ShopZone+Mega+Sale">
                     </div>
                     <a href="#slide3" class="prev arrow">
-                        <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-chevron-left"></i>
                     </a>
                     <a href="#slide2" class="next arrow">
-                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
-                <div id="#slide2" class="slide">
+                <div id="slide2" class="slide">
                     <div class="content">
-                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122915/image8.jpg">
-                        <a href="#slide1" class="prev arrow">
-                            <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
-                        </a>
-                        <a href="#slide3" class="next arrow">
-                            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
-                        </a>
+                        <img src="https://placehold.co/1550x500/4CAF50/FFFFFF?text=New+Arrivals+Daily">
                     </div>
-                <div id="#slide3" class="slide">
+                    <a href="#slide1" class="prev arrow">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a href="#slide3" class="next arrow">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div id="slide3" class="slide">
                     <div class="content">
-                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326121955/image.jpg">
+                        <img src="https://placehold.co/1550x500/2196F3/FFFFFF?text=Electronics+Deals">
                     </div>
-                    <div class="arrows"></div>
                     <a href="#slide2" class="prev arrow">
-                        <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-chevron-left"></i>
                     </a>
                     <a href="#slide1" class="next arrow">
-                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
             </div>
             <div class="text">
                 <p>
-                    You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+                    Welcome to ShopZone! Explore millions of products with fast and reliable delivery.
                 </p>
                 <a href="#">
-                    Click here to go to amazon.in
+                    Discover More
                 </a>
             </div>
         </div>
-</div>
-        <div class="items-container">
-            <div class="item-card">
-                <h2>Gaming accessories</h2>
-                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122918/image14.jpg">
-                <p>
-                    <a href="#">See more</a>
-                </p>
-            </div>
-            <div class="item-card">
-                <h2>Deal in PCs</h2>
-                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122917/image12.jpg">
-                <p>
-                    <a href="#">See more</a>
-                </p>
-            </div>
-            <div class="item-card">
-                <h2>Amazon Gadget Store</h2>
-                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122918/image15.jpg">
-                <p>
-                    <a href="#">See more</a>
-                </p>
-            </div>
-            <div class="item-card">
-                <h2>Handpicked music</h2>
-                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122916/image11.jpg">
-                <p>
-                    <a href="#">See more</a>
-                </p>
-            </div>
-            <div class="item-card">
-                <h2>Fill your Easter basket</h2>
-                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326121956/image3.jpg">
-                <p>
-                    <a href="#">See more</a>
-                </p>
-            </div>
-            <div class="item-card">
-                <h2>Top deal</h2>
-                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122915/image8.jpg">
-                <p>
-                    <a href="#">See more</a>
-                </p>
-            </div>
-            <div class="item-card">
-                <h2>Shop deals in Fashion</h2>
-                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122915/image9.jpg">
-                <p>
-                    <a href="#">See more</a>
-                </p>
-            </div>
-            <div class="item-card">
-                <h2>Gaming merchandise</h2>
-                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122917/image13.jpg">
-                <p>
-                    <a href="#">See more</a>
-                </p>
-            </div>
-            <div class="item-card">
-                <h2>Movies</h2>
-                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326121955/image.jpg">
-                <p>
-                    <a href="#">See more</a>
-                </p>
-            </div>
 
+        <div class="items-container product-grid">
+            <div class="item-card product-card">
+                <h2>Electronics Essentials</h2>
+                <img src="https://placehold.co/300x200/B0E0E6/000000?text=Laptop+&amp;+Gadgets">
+                <p>
+                    <a href="#">Shop now</a>
+                </p>
+            </div>
+            <div class="item-card product-card">
+                <h2>Fashion & Apparel</h2>
+                <img src="https://placehold.co/300x200/FFDAB9/000000?text=Clothing+&amp;+Accessories">
+                <p>
+                    <a href="#">Browse styles</a>
+                </p>
+            </div>
+            <div class="item-card product-card">
+                <h2>Home & Kitchen</h2>
+                <img src="https://placehold.co/300x200/E6E6FA/000000?text=Home+Decor+&amp;+Appliances">
+                <p>
+                    <a href="#">Explore home goods</a>
+                </p>
+            </div>
+            <div class="item-card product-card">
+                <h2>Books & Media</h2>
+                <img src="https://placehold.co/300x200/ADD8E6/000000?text=Books+&amp;+Movies">
+                <p>
+                    <a href="#">Find your next read</a>
+                </p>
+            </div>
+            <div class="item-card product-card">
+                <h2>Sports & Outdoors</h2>
+                <img src="https://placehold.co/300x200/F0F8FF/000000?text=Gear+&amp;+Equipment">
+                <p>
+                    <a href="#">Get active</a>
+                </p>
+            </div>
+            <div class="item-card product-card">
+                <h2>Beauty & Personal Care</h2>
+                <img src="https://placehold.co/300x200/FFFACD/000000?text=Skincare+&amp;+Makeup">
+                <p>
+                    <a href="#">Enhance your routine</a>
+                </p>
+            </div>
+            <div class="item-card product-card">
+                <h2>Toys & Games</h2>
+                <img src="https://placehold.co/300x200/98FB98/000000?text=Fun+for+All+Ages">
+                <p>
+                    <a href="#">Discover fun</a>
+                </p>
+            </div>
+            <div class="item-card product-card">
+                <h2>Health & Wellness</h2>
+                <img src="https://placehold.co/300x200/DDA0DD/000000?text=Supplements+&amp;+Fitness">
+                <p>
+                    <a href="#">Live healthier</a>
+                </p>
+            </div>
+            <div class="item-card product-card">
+                <h2>Automotive</h2>
+                <img src="https://placehold.co/300x200/F5DEB3/000000?text=Car+Parts+&amp;+Accessories">
+                <p>
+                    <a href="#">Upgrade your ride</a>
+                </p>
+            </div>
         </div>
     </main>
 
@@ -227,38 +235,38 @@
         <div class="footer-links">
             <ul>
                 <p>Get to Know Us</p>
-                <a>Carrers</a>
+                <a>Careers</a>
                 <a>Blog</a>
-                <a>About Amazon</a>
+                <a>About ShopZone</a>
                 <a>Investor Relations</a>
-                <a>Amazon Devices</a>
-                <a>Amazon Science</a>
+                <a>ShopZone Devices</a>
+                <a>ShopZone Science</a>
             </ul>
             <ul>
                 <p>Make Money with Us</p>
-                <a>Sell products on Amazon</a>
-                <a>Sell on Amazon Business</a>
-                <a>Sell apps on Amazon</a>
+                <a>Sell products on ShopZone</a>
+                <a>Sell on ShopZone Business</a>
+                <a>Sell apps on ShopZone</a>
                 <a>Become an Affiliate</a>
                 <a>Self-Publish with Us</a>
-                <a>Host on Amazon Hub</a>
-                <a>>See More Make Money with Us</a>
+                <a>Host on ShopZone Hub</a>
+                <a>See More Ways to Make Money</a>
             </ul>
             <ul>
                 <p>Let Us Help You</p>
-                <a>Amazon and COVID-19</a>
+                <a>ShopZone and COVID-19</a>
                 <a>Your Account</a>
                 <a>Your Orders</a>
                 <a>Shipping Rates & Policies</a>
                 <a>Returns and Replacements</a>
                 <a>Manage Your Content and Devices</a>
-                <a>Amazon Assistant</a>
+                <a>ShopZone Assistant</a>
                 <a>Help</a>
             </ul>
         </div>
         <div class="country-info">
             <div class="logo">
-                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326183545/amazon.png">
+                <img src="https://placehold.co/50x20/0f1111/FFFFFF?text=ShopZone">
             </div>
             <div class="options">
                 <select>
@@ -285,7 +293,7 @@
                 <a href="#">Privacy Notice</a>
                 <a href="#">Your Ads Privacy Choices</a>
             </div>
-            (c) 1996-2023, Amazon.com, Inc. or its affiliates
+            &copy; 1996-2024, ShopZone.com, Inc. or its affiliates
         </div>
     </footer>
 </body>
