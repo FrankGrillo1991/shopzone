@@ -1,1 +1,1 @@
-Amazon Clone developed with HTML & CSS
+Amazon Clone developed with HTML, CSS & JavaScript
