@@ -380,6 +380,33 @@ main {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 16px; /* Rounded corners for product cards */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 280px; /* Fixed width for product cards */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 400px; /* Ensure cards have a minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
 .item-card { /* Renamed from .product-card to .item-card */
     height: 400px;
     display: flex;
