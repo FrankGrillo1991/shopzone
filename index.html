@@ -168,6 +168,21 @@
             <button class="filter-btn" data-category="clothing">Clothing</button>
         </div>
 
+        <div class="products" data-category="books">
+            <h3>Atomic Habits</h3>
+            <p>Self-help book</p>
+        </div>
+
+        .products
+        <div class="products" data-category="electronics">
+            <h3>Bluetooth Speaker</h3>
+            <p>Portable and waterproof</p>
+        </div>
+
+        <div class="products" data-category="clothing">
+            <h3>Graphic T-Shirt</h3>
+            <p>100& cotton, unisex</p>
+        </div>
 
         <div class="items-container product-grid">
             <div class="item-card product-card">
@@ -305,6 +320,27 @@
             &copy; 1996-2024, ShopZone.com, Inc. or its affiliates
         </div>
     </footer>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+
+                productCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category')
+                })
+
+                if (category === 'all' || cardCategory === category) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
