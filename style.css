@@ -242,11 +242,7 @@ nav {
     color: #FFD700;
     margin-left: 8px;
 }
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #fff;
-    color: #000;
-    font-size: 15px;
-    line-height: 1.5;
+/* ...existing code... */
 }
 
 /* Unify card styles: .product-card and .item-card */
