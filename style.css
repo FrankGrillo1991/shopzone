@@ -248,6 +248,29 @@ nav {
     cursor: pointer;
 }
 
+.footer-btn {
+    display: inline-block;
+    background: #37475A;
+    color: #fff !important;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    margin: 4px 0;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-align: left;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-btn:hover, .footer-btn:focus {
+    background: #485769;
+    color: #FFD700 !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    outline: none;
+}
+
 .footer-links ul a:hover {
     text-decoration: underline;
 }
