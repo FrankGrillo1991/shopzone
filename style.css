@@ -4,20 +4,7 @@
     padding: 0;
 
 body {
-/* Header/Navbar Styles - Original Design */
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(90deg, #232F3E 80%, #FFD700 100%);
-    color: #fff;
-    padding: 1rem 2.5rem 1rem 2.5rem;
-    min-height: 70px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    border-bottom: 2px solid #FFD700;
-    position: relative;
-}
+/* ...existing code... */
 /* Filter Buttons Styling */
 .filter-buttons {
     display: flex;
