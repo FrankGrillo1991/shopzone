@@ -1,1 +1,1 @@
-Amazon Clone developed with HTML, CSS & JavaScript# shopzone
+Shopzone Marketplace developed with HTML, CSS & JavaScript
