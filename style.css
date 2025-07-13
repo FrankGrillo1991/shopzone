@@ -16,48 +16,39 @@ nav {
 .filter-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 18px 24px;
+    gap: 10px;
     justify-content: center;
-    align-items: center;
-    margin: 32px auto 28px auto;
-    width: 100%;
-    max-width: 900px;
-    padding: 0 12px;
-    box-sizing: border-box;
-    text-align: center;
+    margin: 18px 0;
 }
 
 .filter-btn {
-    background: linear-gradient(90deg, #FFD700 0%, #FFB300 100%);
+    background: #f0f0f0;
     color: #232F3E;
-    border: none;
-    border-radius: 24px;
-    padding: 12px 32px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 24px;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s, transform 0.2s;
+    transition: background 0.2s, color 0.2s;
     outline: none;
 }
 
 .filter-btn:focus {
-    background: #FFB300;
-    color: #fff;
-    box-shadow: 0 0 0 3px #FFD70055;
+    background: #e0e0e0;
+    color: #232F3E;
+    border-color: #007185;
 }
 
 .filter-btn:hover {
-    background: #FFD700;
+    background: #e0e0e0;
     color: #232F3E;
-    transform: translateY(-2px) scale(1.04);
 }
 
 .filter-btn.active {
-    background: #232F3E;
-    color: #FFD700;
-    border: 2px solid #FFD700;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    background: #007185;
+    color: #fff;
+    border: 1px solid #007185;
 }
 
 .nav-left, .nav-center, .nav-right {
