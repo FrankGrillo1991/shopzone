@@ -169,26 +169,59 @@
 
         <div class="product-grid">
 
-        <div class="product-card" data-category="books">
-            <span class="product-tag">Books</span>
-            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80" alt="Atomic Habits">
-            <h3>Atomic Habits</h3>
-            <p>Self-help book</p>
-        </div>
+<!-- 📚 Books -->
+<div class="product-card" data-category="books">
+  <img src="img/book1.jpg" alt="The Great Gatsby">
+  <h3>The Great Gatsby</h3>
+  <p>A timeless classic novel by F. Scott Fitzgerald.</p>
+  <p>Price: $<span class="price" data-product-id="b1">10.99</span></p>
+  <button>Add to Cart</button>
+</div>
 
-        <div class="product-card" data-category="electronics">
-            <span class="product-tag">Electronics</span>
-            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Bluetooth Speaker">
-            <h3>Bluetooth Speaker</h3>
-            <p>Portable and waterproof</p>
-        </div>
+<div class="product-card" data-category="books">
+  <img src="img/book2.jpg" alt="1984">
+  <h3>1984</h3>
+  <p>Dystopian novel by George Orwell depicting a totalitarian future.</p>
+  <p>Price: $<span class="price" data-product-id="b2">8.50</span></p>
+  <button>Add to Cart</button>
+</div>
 
-        <div class="product-card" data-category="clothing">
-            <span class="product-tag">Clothing</span>
-            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Graphic T-Shirt">
-            <h3>Graphic T-Shirt</h3>
-            <p>100% cotton, unisex</p>
-        </div>
+<!-- 💻 Electronics -->
+<div class="product-card" data-category="electronics">
+  <img src="img/laptop.jpg" alt="Laptop">
+  <h3>UltraSlim Laptop</h3>
+  <p>Powerful and portable laptop for all your needs.</p>
+  <p>Price: $<span class="price" data-product-id="e1">799.99</span></p>
+  <button>Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="electronics">
+  <img src="img/headphones.jpg" alt="Noise-Cancelling Headphones">
+  <h3>Noise-Cancelling Headphones</h3>
+  <p>Experience pure sound with advanced noise cancellation.</p>
+  <p>Price: $<span class="price" data-product-id="e2">199.99</span></p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- 👕 Clothing -->
+<div class="product-card" data-category="clothing">
+  <img src="img/tshirt.jpg" alt="Basic T-Shirt">
+  <h3>Basic T-Shirt</h3>
+  <p>Comfortable cotton t-shirt available in multiple colors.</p>
+  <p>Price: $<span class="price" data-product-id="c1">12.99</span></p>
+  <button>Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="clothing">
+  <img src="img/jacket.jpg" alt="Winter Jacket">
+  <h3>Winter Jacket</h3>
+  <p>Stay warm and stylish with this insulated jacket.</p>
+  <p>Price: $<span class="price" data-product-id="c2">89.99</span></p>
+  <button>Add to Cart</button>
+</div>
+
+
+
     </div>
         <div class="items-container product-grid">
             <div class="item-card product-card">
@@ -345,6 +378,34 @@
                 });
             });
         });
+
+// Function to simulate fetching a random price
+function getRandomPrice(category) {
+  switch (category) {
+    case 'books': return (5 + Math.random() * 15).toFixed(2);
+    case 'electronics': return (50 + Math.random() * 950).toFixed(2);
+    case 'clothing': return (10 + Math.random() * 90).toFixed(2);
+    default: return (20 + Math.random() * 100).toFixed(2);
+  }
+}
+
+// Update all prices every 5 seconds
+function updatePrices() {
+  document.querySelectorAll('.product-card').forEach(card => {
+    const category = card.getAttribute('data-category');
+    const priceSpan = card.querySelector('.price');
+    if (priceSpan) {
+      priceSpan.textContent = getRandomPrice(category);
+    }
+  });
+}
+
+// Initial update on page load
+updatePrices();
+
+// Repeat every 5 seconds
+setInterval(updatePrices, 5000);
+
     </script>
 </body>
 
