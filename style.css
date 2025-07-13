@@ -232,6 +232,7 @@ nav {
     margin-top: 0; /* Removed top margin, padding handles spacing */
     margin-bottom: 2rem; /* Add bottom margin for spacing when wrapped */
     min-width: 150px; /* Ensure columns don't get too narrow */
+    list-style-type: none; /* Remove bullets from footer links */
 }
 
 .footer-links ul p {
