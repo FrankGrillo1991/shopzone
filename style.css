@@ -12,56 +12,40 @@ body {
     line-height: 1.5;
 }
 
-/* Basic reset */
-.product-card {
+/* Unify card styles: .product-card and .item-card */
+.product-card, .item-card {
     background-color: #ffffff;
-    border-radius: 16px; /* Rounded corners for product cards */
+    border-radius: 16px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 280px; /* Fixed width for product cards */
+    max-width: 280px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 400px; /* Ensure cards have a minimum height */
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
-}
-
-.item-card { /* Renamed from .product-card to .item-card */
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 300px;
-    gap: 1rem;
-    font-size: .7rem;
-    background-color: white;
     padding: 1rem;
     cursor: pointer;
     overflow: hidden;
-    border-radius: 10px; /* Rounded corners for item cards */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 1rem;
+    font-size: .9rem;
 }
 
-.item-card:hover {
+.product-card:hover, .item-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
 }
 
-.item-card img {
+.product-card img, .item-card img {
     height: 300px;
     width: 100%;
-    border: none; /* Removed black border */
+    border: none;
     object-fit: cover;
-    border-radius: 8px; /* Rounded corners for images */
+    border-radius: 8px;
 }
 
-.item-card a {
+.product-card a, .item-card a {
     text-decoration: none;
     font-weight: bold;
     color: #007185;
