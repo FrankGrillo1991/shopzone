@@ -224,68 +224,77 @@
 
     </div>
         <div class="items-container product-grid">
-            <div class="item-card product-card">
+            <div class="item-card product-card" data-category="electronics">
                 <h2>Electronics Essentials</h2>
                 <img src="https://placehold.co/300x200/B0E0E6/000000?text=Laptop+&amp;+Gadgets">
                 <p>
                     <a href="#">Shop now</a>
                 </p>
+                <p>Price: $<span class="price"></span></p>
             </div>
-            <div class="item-card product-card">
+            <div class="item-card product-card" data-category="clothing">
                 <h2>Fashion & Apparel</h2>
                 <img src="https://placehold.co/300x200/FFDAB9/000000?text=Clothing+&amp;+Accessories">
                 <p>
                     <a href="#">Browse styles</a>
                 </p>
+                <p>Price: $<span class="price"></span></p>
             </div>
-            <div class="item-card product-card">
+            <div class="item-card product-card" data-category="home">
                 <h2>Home & Kitchen</h2>
                 <img src="https://placehold.co/300x200/E6E6FA/000000?text=Home+Decor+&amp;+Appliances">
                 <p>
                     <a href="#">Explore home goods</a>
                 </p>
+                <p>Price: $<span class="price"></span></p>
             </div>
-            <div class="item-card product-card">
+            <div class="item-card product-card" data-category="books">
                 <h2>Books & Media</h2>
                 <img src="https://placehold.co/300x200/ADD8E6/000000?text=Books+&amp;+Movies">
                 <p>
                     <a href="#">Find your next read</a>
                 </p>
+                <p>Price: $<span class="price"></span></p>
             </div>
-            <div class="item-card product-card">
+            <div class="item-card product-card" data-category="sports">
                 <h2>Sports & Outdoors</h2>
                 <img src="https://placehold.co/300x200/F0F8FF/000000?text=Gear+&amp;+Equipment">
                 <p>
                     <a href="#">Get active</a>
                 </p>
+                <p>Price: $<span class="price"></span></p>
             </div>
-            <div class="item-card product-card">
+            <div class="item-card product-card" data-category="beauty">
                 <h2>Beauty & Personal Care</h2>
                 <img src="https://placehold.co/300x200/FFFACD/000000?text=Skincare+&amp;+Makeup">
                 <p>
                     <a href="#">Enhance your routine</a>
                 </p>
+                <p>Price: $<span class="price"></span></p>
             </div>
-            <div class="item-card product-card">
+            <div class="item-card product-card" data-category="toys">
                 <h2>Toys & Games</h2>
                 <img src="https://placehold.co/300x200/98FB98/000000?text=Fun+for+All+Ages">
                 <p>
                     <a href="#">Discover fun</a>
                 </p>
+                <p>Price: $<span class="price"></span></p>
             </div>
-            <div class="item-card product-card">
+            <div class="item-card product-card" data-category="health">
                 <h2>Health & Wellness</h2>
                 <img src="https://placehold.co/300x200/DDA0DD/000000?text=Supplements+&amp;+Fitness">
                 <p>
                     <a href="#">Live healthier</a>
                 </p>
+                <p>Price: $<span class="price"></span></p>
             </div>
-            <div class="item-card product-card">
+            <div class="item-card product-card" data-category="automotive">
                 <h2>Automotive</h2>
                 <img src="https://placehold.co/300x200/F5DEB3/000000?text=Car+Parts+&amp;+Accessories">
                 <p>
                     <a href="#">Upgrade your ride</a>
                 </p>
+                <p>Price: $<span class="price"></span></p>
             </div>
         </div>
     </main>
@@ -374,6 +383,14 @@ function getRandomPrice(category) {
 // Update all prices every 5 seconds
 function updatePrices() {
   document.querySelectorAll('.product-card').forEach(card => {
+    const category = card.getAttribute('data-category');
+    const priceSpan = card.querySelector('.price');
+    if (priceSpan) {
+      priceSpan.textContent = getRandomPrice(category);
+    }
+  });
+
+  document.querySelectorAll('.item-card').forEach(card => {
     const category = card.getAttribute('data-category');
     const priceSpan = card.querySelector('.price');
     if (priceSpan) {
