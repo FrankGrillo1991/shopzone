@@ -313,6 +313,38 @@ nav {
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: relative;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.slide .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.slide .arrow.left {
+    left: 16px;
+}
+.slide .arrow.right {
+    right: 16px;
 }
 
 .carousel .text {
