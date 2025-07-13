@@ -16,16 +16,26 @@
 <body>
     <header>
         <nav>
-            <div class="nav-logo">
-                <a href="#">
-                    <span class="shopzone-text">ShopZone</span>
-                </a>
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <a href="#" class="shopzone-logo-link">
+                        <div class="shopzone-logo">
+                            <i class="fas fa-shopping-cart shopzone-icon"></i>
+                            <span class="shopzone-text">ShopZone</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="location">
+                    <p class="top-text">Deliver to</p>
+                    <div class="location-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="bottom-text">United States</p>
+                    </div>
+                </div>
             </div>
-            <div class="location">
-                <span>Deliver to United States</span>
-            </div>
-            <div class="search-bar">
-                <select>
+
+            <div class="nav-center">
+                <select class="search-dropdown" title="Search Category">
                     <option>All</option>
                     <option>Electronics</option>
                     <option>Fashion</option>
@@ -33,15 +43,19 @@
                     <option>Books</option>
                     <option>Sports & Outdoors</option>
                 </select>
-                <input type="text" placeholder="Search ShopZone">
-                <button type="submit">Search</button>
+                <input type="text" placeholder="Search ShopZone" class="search-box" title="Search ShopZone">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
-            <div class="nav-links">
-                <a href="#">Today's Deals</a>
-                <a href="#">Customer Service</a>
-                <a href="#">Gift Cards</a>
-                <a href="#">Sell on ShopZone</a>
-                <a href="#">Registry</a>
+
+            <div class="nav-right">
+                <div class="cart-option">
+                    <div class="cart-logo">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    Cart
+                </div>
             </div>
         </nav>
     </header>
@@ -53,10 +67,10 @@
                     <div class="content">
                         <img src="https://placehold.co/1550x500/FF5722/FFFFFF?text=ShopZone+Mega+Sale" alt="ShopZone Mega Sale">
                     </div>
-                    <a href="#slide3" class="prev arrow">
+                    <a href="#slide3" class="prev arrow" title="Previous Slide">
                         <i class="fa-solid fa-chevron-left"></i>
                     </a>
-                    <a href="#slide2" class="next arrow">
+                    <a href="#slide2" class="next arrow" title="Next Slide">
                         <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
@@ -64,10 +78,10 @@
                     <div class="content">
                         <img src="https://placehold.co/1550x500/4CAF50/FFFFFF?text=New+Arrivals+Daily" alt="New Arrivals Daily">
                     </div>
-                    <a href="#slide1" class="prev arrow">
+                    <a href="#slide1" class="prev arrow" title="Previous Slide">
                         <i class="fa-solid fa-chevron-left"></i>
                     </a>
-                    <a href="#slide3" class="next arrow">
+                    <a href="#slide3" class="next arrow" title="Next Slide">
                         <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
@@ -75,10 +89,10 @@
                     <div class="content">
                         <img src="https://placehold.co/1550x500/2196F3/FFFFFF?text=Electronics+Deals" alt="Electronics Deals">
                     </div>
-                    <a href="#slide2" class="prev arrow">
+                    <a href="#slide2" class="prev arrow" title="Previous Slide">
                         <i class="fa-solid fa-chevron-left"></i>
                     </a>
-                    <a href="#slide1" class="next arrow">
+                    <a href="#slide1" class="next arrow" title="Next Slide">
                         <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
@@ -87,7 +101,7 @@
                 <p>
                     Welcome to ShopZone! Explore millions of products with fast and reliable delivery.
                 </p>
-                <a href="#">
+                <a href="#" title="Discover More">
                     Discover More
                 </a>
             </div>
@@ -161,7 +175,7 @@
                 <h2>Electronics Essentials</h2>
                 <div class="product-image">💻 Electronics Image</div>
                 <p>
-                    <a href="#">Shop now</a>
+                    <a href="#" title="Shop now">Shop now</a>
                 </p>
                 <p>Price: $<span class="price"></span></p>
             </div>
@@ -169,7 +183,7 @@
                 <h2>Fashion & Apparel</h2>
                 <div class="product-image">👕 Clothing Image</div>
                 <p>
-                    <a href="#">Browse styles</a>
+                    <a href="#" title="Browse styles">Browse styles</a>
                 </p>
                 <p>Price: $<span class="price"></span></p>
             </div>
@@ -177,7 +191,7 @@
                 <h2>Home & Kitchen</h2>
                 <div class="product-image">🏠 Home Image</div>
                 <p>
-                    <a href="#">Explore home goods</a>
+                    <a href="#" title="Explore home goods">Explore home goods</a>
                 </p>
                 <p>Price: $<span class="price"></span></p>
             </div>
@@ -185,7 +199,7 @@
                 <h2>Books & Media</h2>
                 <div class="product-image">📚 Book Image</div>
                 <p>
-                    <a href="#">Find your next read</a>
+                    <a href="#" title="Find your next read">Find your next read</a>
                 </p>
                 <p>Price: $<span class="price"></span></p>
             </div>
@@ -193,7 +207,7 @@
                 <h2>Sports & Outdoors</h2>
                 <div class="product-image">🏀 Sports Image</div>
                 <p>
-                    <a href="#">Get active</a>
+                    <a href="#" title="Get active">Get active</a>
                 </p>
                 <p>Price: $<span class="price"></span></p>
             </div>
@@ -201,7 +215,7 @@
                 <h2>Beauty & Personal Care</h2>
                 <div class="product-image">💄 Beauty Image</div>
                 <p>
-                    <a href="#">Enhance your routine</a>
+                    <a href="#" title="Enhance your routine">Enhance your routine</a>
                 </p>
                 <p>Price: $<span class="price"></span></p>
             </div>
@@ -209,7 +223,7 @@
                 <h2>Toys & Games</h2>
                 <div class="product-image">🧸 Toys Image</div>
                 <p>
-                    <a href="#">Discover fun</a>
+                    <a href="#" title="Discover fun">Discover fun</a>
                 </p>
                 <p>Price: $<span class="price"></span></p>
             </div>
@@ -217,7 +231,7 @@
                 <h2>Health & Wellness</h2>
                 <div class="product-image">💊 Health Image</div>
                 <p>
-                    <a href="#">Live healthier</a>
+                    <a href="#" title="Live healthier">Live healthier</a>
                 </p>
                 <p>Price: $<span class="price"></span></p>
             </div>
@@ -225,7 +239,7 @@
                 <h2>Automotive</h2>
                 <div class="product-image">🚗 Automotive Image</div>
                 <p>
-                    <a href="#">Upgrade your ride</a>
+                    <a href="#" title="Upgrade your ride">Upgrade your ride</a>
                 </p>
                 <p>Price: $<span class="price"></span></p>
             </div>
@@ -233,7 +247,7 @@
     </main>
 
     <footer>
-        <a href="#" class="back-option">
+        <a href="#" class="back-option" title="Back to top">
             Back to top
         </a>
 
