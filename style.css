@@ -296,6 +296,13 @@ nav {
 }
 
 /* Center slideshow and text below it */
+.carousel-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 24px auto;
+}
 .carousel {
     display: flex;
     flex-direction: column;
