@@ -736,14 +736,43 @@ main {
     .cta-section .content, .newsletter .content {
         width: 95%; /* Wider content area */
     }
+
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin: 18px 0;
+    }
+    .filter-btn {
+        flex: 1 0 45%;
+        min-width: 120px;
+        padding: 8px 0;
+        font-size: 1rem;
+        margin: 4px;
+    }
+    .product-grid {
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px;
+    }
+    .product-card {
+        max-width: 100%;
+        min-height: 320px;
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+    .product-card img {
+        height: 140px;
+    }
+    .item-card {
+        flex: 1 0 100%;
+        height: auto;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .item-card img {
+        height: 140px;
+    }
 }
 
-@media screen and (max-width: 380px) {
-    .language-option, .account-option, .order-option, .cart-option {
-        width: 100%; /* Stack all nav-right items */
-        margin: 5px 0;
-    }
-    .nav-options .options p {
-        width: 100%; /* Stack all nav-options items */
-    }
-}
