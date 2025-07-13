@@ -12,6 +12,47 @@ nav {
     background: #232F3E;
     color: #fff;
     padding: 0.5rem 2rem;
+/* Filter Buttons Styling */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+.filter-btn {
+    background: linear-gradient(90deg, #FFD700 0%, #FFB300 100%);
+    color: #232F3E;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    outline: none;
+}
+
+.filter-btn:focus {
+    background: #FFB300;
+    color: #fff;
+    box-shadow: 0 0 0 3px #FFD70055;
+}
+
+.filter-btn:hover {
+    background: #FFD700;
+    color: #232F3E;
+    transform: translateY(-2px) scale(1.04);
+}
+
+.filter-btn.active {
+    background: #232F3E;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
     min-height: 60px;
 }
 
@@ -173,6 +214,17 @@ nav {
 
 .footer-links {
     height: auto; /* Changed to auto for flexible height */
+    /* Filter Buttons Responsive */
+    .filter-buttons {
+        gap: 10px;
+        margin: 14px 0;
+    }
+    .filter-btn {
+        padding: 10px 0;
+        font-size: 1rem;
+        min-width: 120px;
+        border-radius: 18px;
+    }
     padding: 3rem 0; /* Added padding */
     display: flex;
     justify-content: space-evenly;
@@ -229,20 +281,18 @@ nav {
     justify-content: center; /* Center options on wrap */
 }
 
-.country-info .options select {
-    font-size: .8rem; /* Increased font size */
-    text-decoration: none;
-    color: #cccccc;
-    background: transparent;
-    border: 1px solid #848688;
-    border-radius: 3px;
-    padding: .5rem;
-    cursor: pointer;
-}
-
-.policies {
-    height: 80px;
-    display: flex;
+    .filter-buttons {
+        gap: 8px;
+        margin: 10px 0;
+    }
+    .filter-btn {
+        flex: 1 0 45%;
+        min-width: 100px;
+        padding: 8px 0;
+        font-size: 0.95rem;
+        margin: 4px;
+        border-radius: 14px;
+    }
     flex-direction: column;
     align-items: center;
     justify-content: center;
