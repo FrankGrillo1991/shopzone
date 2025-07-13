@@ -53,8 +53,6 @@ nav {
     border: 2px solid #FFD700;
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
-    min-height: 60px;
-}
 
 .nav-left, .nav-center, .nav-right {
     display: flex;
@@ -214,17 +212,6 @@ nav {
 
 .footer-links {
     height: auto; /* Changed to auto for flexible height */
-    /* Filter Buttons Responsive */
-    .filter-buttons {
-        gap: 10px;
-        margin: 14px 0;
-    }
-    .filter-btn {
-        padding: 10px 0;
-        font-size: 1rem;
-        min-width: 120px;
-        border-radius: 18px;
-    }
     padding: 3rem 0; /* Added padding */
     display: flex;
     justify-content: space-evenly;
@@ -281,27 +268,18 @@ nav {
     justify-content: center; /* Center options on wrap */
 }
 
-    .filter-buttons {
-        gap: 8px;
-        margin: 10px 0;
-    }
-    .filter-btn {
-        flex: 1 0 45%;
-        min-width: 100px;
-        padding: 8px 0;
-        font-size: 0.95rem;
-        margin: 4px;
-        border-radius: 14px;
-    }
-    flex-direction: column;
-    align-items: center;
+/* Ensure filter buttons are always centered */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
     justify-content: center;
-    gap: .5rem;
-    color: white;
-    background-color: #131A22;
-    padding: 10px; /* Add padding */
-    text-align: center; /* Center text */
+    align-items: center;
+    margin: 24px 0;
+    width: 100%;
 }
+
+/* ...existing code... */
 
 .pages a {
     text-decoration: none;
