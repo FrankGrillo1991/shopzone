@@ -718,7 +718,33 @@ main {
     }
 
     .carousel {
-        height: 250px;
+        height: 180px;
+        min-height: 120px;
+        align-items: flex-end;
+    }
+
+    .carousel .slides-container {
+        height: 100%;
+    }
+
+    .slide .content img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .slide .arrow {
+        scale: 1.2;
+        padding: 6px;
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .carousel .text {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .item-card {
