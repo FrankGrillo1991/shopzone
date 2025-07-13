@@ -157,6 +157,15 @@ body {
     margin: 0 .5rem; /* Adjusted margin */
 }
 
+/* Add flex layout to product grid and footer links */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
 /* Small Devices */
 @media screen and (max-width: 900px) {
     :root {
