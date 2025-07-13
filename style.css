@@ -5,6 +5,7 @@
 }
 
 body {
+/* Header/Navbar Styles - Original Design */
 nav {
     display: flex;
     align-items: center;
@@ -12,6 +13,10 @@ nav {
     background: #232F3E;
     color: #fff;
     padding: 0.5rem 2rem;
+    min-height: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
 /* Filter Buttons Styling */
 .filter-buttons {
     display: flex;
@@ -54,10 +59,12 @@ nav {
 .nav-left, .nav-center, .nav-right {
     display: flex;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .nav-left {
     gap: 2rem;
+}
 }
 .nav-center {
     flex: 1;
@@ -72,19 +79,24 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
     color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 .nav-logo .shopzone-icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #FFD700;
+    margin-right: 8px;
 }
 .location {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    margin-left: 1rem;
 }
 .location-icon {
     display: flex;
@@ -123,8 +135,9 @@ nav {
     cursor: pointer;
 }
 .cart-logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #FFD700;
+    margin-left: 8px;
 }
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #fff;
