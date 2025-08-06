@@ -6,60 +6,170 @@
     <title>Contact ShopZone</title>
     <style>
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #232F3E 0%, #37475A 100%);
             padding: 40px;
+            min-height: 100vh;
+            margin: 0;
         }
 
-        form {
+        .contact-container {
             background: white;
-            padding: 30px;
+            padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0, 120, 255, 0.1);
-            max-width: 500px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
             margin: auto;
         }
 
         h2 {
-            color: #0077cc;
+            color: #232F3E;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #232F3E;
+            font-weight: 500;
         }
 
         input, textarea {
             width: 100%;
             padding: 12px;
-            margin: 10px 0 20px 0;
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
             border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #FFD700;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
         }
 
         button {
-            background-color: #0077cc;
+            background-color: #232F3E;
             color: white;
-            padding: 12px 20px;
+            padding: 12px 24px;
             border: none;
             border-radius: 6px;
             cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            width: 100%;
+            transition: background-color 0.2s;
         }
 
-        #success {
-            color: green;
+        button:hover {
+            background-color: #37475A;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .success-message {
+            color: #27ae60;
             text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-link a {
+            color: #232F3E;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link a:hover {
+            color: #FFD700;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            color: #666;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <form id="contact-form">
-        <h2>Contact ShopZone</h2>
-        <input type="text" id="name" name="name" placeholder="Your Name" required />
-        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-        <p id="success"></p>
-    </form>
+    <div class="contact-container">
+        <form id="contact-form">
+            <h2>Contact ShopZone</h2>
+            
+            <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" />
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea name="message" id="message" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+            
+            <button type="submit" id="submit-btn">Send Message</button>
+            <div class="loading" id="loading">Sending message...</div>
+            <p id="success" class="success-message"></p>
+        </form>
+        
+        <div class="back-link">
+            <a href="index.html">← Back to ShopZone</a>
+        </div>
+    </div>
+    
     <script>
         document.getElementById('contact-form').addEventListener('submit', async function(event) {
             event.preventDefault();
-            const name = document.getElementById('name').value;
-            const message = document.getElementById('message').value;
+            
+            const name = document.getElementById('name').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const submitBtn = document.getElementById('submit-btn');
+            const loading = document.getElementById('loading');
+            const successMsg = document.getElementById('success');
+            
+            if (!name || !message) {
+                successMsg.textContent = 'Please fill in all required fields.';
+                successMsg.className = 'error-message';
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            loading.style.display = 'block';
+            successMsg.textContent = '';
             
             try {
                 const res = await fetch('/api/addMessage', {
@@ -69,17 +179,28 @@
                     },
                     body: JSON.stringify({ name, message })
                 });
+                
                 const result = await res.json();
+                
                 if (result.success) {
-                    document.getElementById('success').textContent = 'Message sent!';
+                    successMsg.textContent = 'Message sent successfully! We\'ll get back to you soon.';
+                    successMsg.className = 'success-message';
                     document.getElementById('name').value = '';
+                    document.getElementById('email').value = '';
                     document.getElementById('message').value = '';
                 } else {
-                    document.getElementById('success').textContent = 'Error sending message.';
+                    successMsg.textContent = result.error || 'Error sending message. Please try again.';
+                    successMsg.className = 'error-message';
                 }
             } catch (error) {
-                document.getElementById('success').textContent = 'Error sending message.';
                 console.error('Error:', error);
+                successMsg.textContent = 'Error sending message. Please check your connection and try again.';
+                successMsg.className = 'error-message';
+            } finally {
+                // Reset button state
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+                loading.style.display = 'none';
             }
         });
     </script>
