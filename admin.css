@@ -4,3 +4,12 @@ body {
     font-family: 'Segoe UI', sans-serif;
     padding: 40px;
 }
+
+.admin-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 120, 255, 0.1);
+}
