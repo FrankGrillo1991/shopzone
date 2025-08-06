@@ -34,9 +34,27 @@ body {
     margin-top: 20px;
 }
 
-.messages-section h3 {
-    color: #232F3E;
+.messages-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
+}
+
+.messages-header h3 {
+    color: #232F3E;
+    margin: 0;
+}
+
+.refresh-btn {
+    background-color: #FFD700;
+    color: #232F3E;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+.refresh-btn:hover {
+    background-color: #e6c200;
 }
 
 input, textarea {
@@ -141,4 +159,30 @@ button:hover {
 
 .send-reply-btn:hover {
     background-color: #e6c200;
+}
+
+.existing-reply {
+    color: #27ae60;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.message-date {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.no-messages {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 20px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }

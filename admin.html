@@ -23,7 +23,10 @@
             <button onclick="logout()" class="logout-btn">Logout</button>
         </div>
         <div class="messages-section">
-            <h3>Customer Messages</h3>
+            <div class="messages-header">
+                <h3>Customer Messages</h3>
+                <button onclick="refreshMessages()" class="refresh-btn">Refresh Messages</button>
+            </div>
             <div id="messages"></div>
         </div>
     </div>
