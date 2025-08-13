@@ -54,6 +54,32 @@ app.post('/api/addMessage', (req, res) => {
     });
 });
 
+// POST /api/contact (alias for /api/addMessage)
+app.post('/api/contact', (req, res) => {
+    // Accepts name, email (optional), message
+    const { name, email, message } = req.body;
+    if (!name || !message) {
+        return res.status(400).json({ error: 'Name and message are required' });
+    }
+    const trimmedName = name.trim();
+    const trimmedMessage = message.trim();
+    if (!trimmedName || !trimmedMessage) {
+        return res.status(400).json({ error: 'Name and message cannot be empty' });
+    }
+    // Optionally store email in the message text
+    let fullMessage = trimmedMessage;
+    if (email && email.trim()) {
+        fullMessage = `Email: ${email.trim()}\n${trimmedMessage}`;
+    }
+    db.run('INSERT INTO messages (name, message) VALUES (?, ?)', [trimmedName, fullMessage], function(err) {
+        if (err) {
+            console.error('Database error:', err);
+            return res.status(500).json({ error: err.message });
+        }
+        res.json({ success: true, id: this.lastID });
+    });
+});
+
 // POST Reply to Message
 app.post('/api/replyMessage', (req, res) => {
     const { id, reply } = req.body;
