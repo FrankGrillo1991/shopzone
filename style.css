@@ -807,3 +807,8 @@ nav {
     }
 }
 
+.product-grid {
+    display: grid;
+    gap: 1rem;
+}
+
