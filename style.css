@@ -824,9 +824,10 @@ nav {
     } /* tablet 2 columns */
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     .product-grid {
         grid-template-columns: repeat(4, 1fr);
     } /* desktop 4 columns */
-}
+} */
+
 
