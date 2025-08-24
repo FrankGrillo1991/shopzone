@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2025-08-24T02:01:11.423Z",
+  "timestamp": "2025-08-24T02:32:09.383Z",
   "url": "https://shopzone-marketplace.netlify.app/",
   "toolOptions": {
     "reporter": "v1"
@@ -1174,7 +1174,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"b1\">13.96</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"b1\">15.13</span></p>",
           "target": [
             ".product-card[data-category=\"books\"]:nth-child(1) > p:nth-child(4)"
           ]
@@ -1199,7 +1199,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"b1\">13.96</span>",
+          "html": "<span class=\"price\" data-product-id=\"b1\">15.13</span>",
           "target": [
             "span[data-product-id=\"b1\"]"
           ]
@@ -1324,7 +1324,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"b2\">8.74</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"b2\">18.89</span></p>",
           "target": [
             ".product-card[data-category=\"books\"]:nth-child(2) > p:nth-child(4)"
           ]
@@ -1349,7 +1349,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"b2\">8.74</span>",
+          "html": "<span class=\"price\" data-product-id=\"b2\">18.89</span>",
           "target": [
             "span[data-product-id=\"b2\"]"
           ]
@@ -1474,7 +1474,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"e1\">832.07</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"e1\">285.98</span></p>",
           "target": [
             ".product-card[data-category=\"electronics\"]:nth-child(3) > p:nth-child(4)"
           ]
@@ -1499,7 +1499,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"e1\">832.07</span>",
+          "html": "<span class=\"price\" data-product-id=\"e1\">285.98</span>",
           "target": [
             "span[data-product-id=\"e1\"]"
           ]
@@ -1624,7 +1624,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"e2\">818.90</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"e2\">136.88</span></p>",
           "target": [
             ".product-card[data-category=\"electronics\"]:nth-child(4) > p:nth-child(4)"
           ]
@@ -1649,7 +1649,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"e2\">818.90</span>",
+          "html": "<span class=\"price\" data-product-id=\"e2\">136.88</span>",
           "target": [
             "span[data-product-id=\"e2\"]"
           ]
@@ -1774,7 +1774,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"c1\">78.95</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"c1\">76.72</span></p>",
           "target": [
             ".product-card[data-category=\"clothing\"]:nth-child(5) > p:nth-child(4)"
           ]
@@ -1799,7 +1799,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"c1\">78.95</span>",
+          "html": "<span class=\"price\" data-product-id=\"c1\">76.72</span>",
           "target": [
             "span[data-product-id=\"c1\"]"
           ]
@@ -1924,7 +1924,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"c2\">83.31</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"c2\">29.04</span></p>",
           "target": [
             ".product-card[data-category=\"clothing\"]:nth-child(6) > p:nth-child(4)"
           ]
@@ -1949,7 +1949,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"c2\">83.31</span>",
+          "html": "<span class=\"price\" data-product-id=\"c2\">29.04</span>",
           "target": [
             "span[data-product-id=\"c2\"]"
           ]
@@ -7061,7 +7061,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"product-card\" data-category=\"books\">\n  <div class=\"product-image\">📚 Book Image</div>\n  <h3>The Great Gatsby</h3>\n  <p>A timeless classic novel by F. Scott Fitzgerald.</p>\n  <p>Price: $<span class=\"price\" data-product-id=\"b1\">13.96</span></p>\n  <button>Add to Cart</button>\n</div>",
+          "html": "<div class=\"product-card\" data-category=\"books\">\n  <div class=\"product-image\">📚 Book Image</div>\n  <h3>The Great Gatsby</h3>\n  <p>A timeless classic novel by F. Scott Fitzgerald.</p>\n  <p>Price: $<span class=\"price\" data-product-id=\"b1\">15.13</span></p>\n  <button>Add to Cart</button>\n</div>",
           "target": [
             ".product-card[data-category=\"books\"]:nth-child(1)"
           ]
@@ -7133,7 +7133,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"b1\">13.96</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"b1\">15.13</span></p>",
           "target": [
             ".product-card[data-category=\"books\"]:nth-child(1) > p:nth-child(4)"
           ]
@@ -7151,7 +7151,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"b1\">13.96</span>",
+          "html": "<span class=\"price\" data-product-id=\"b1\">15.13</span>",
           "target": [
             "span[data-product-id=\"b1\"]"
           ]
@@ -7187,7 +7187,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"product-card\" data-category=\"books\">\n  <div class=\"product-image\">📚 Book Image</div>\n  <h3>1984</h3>\n  <p>Dystopian novel by George Orwell depicting a totalitarian future.</p>\n  <p>Price: $<span class=\"price\" data-product-id=\"b2\">8.74</span></p>\n  <button>Add to Cart</button>\n</div>",
+          "html": "<div class=\"product-card\" data-category=\"books\">\n  <div class=\"product-image\">📚 Book Image</div>\n  <h3>1984</h3>\n  <p>Dystopian novel by George Orwell depicting a totalitarian future.</p>\n  <p>Price: $<span class=\"price\" data-product-id=\"b2\">18.89</span></p>\n  <button>Add to Cart</button>\n</div>",
           "target": [
             ".product-card[data-category=\"books\"]:nth-child(2)"
           ]
@@ -7259,7 +7259,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"b2\">8.74</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"b2\">18.89</span></p>",
           "target": [
             ".product-card[data-category=\"books\"]:nth-child(2) > p:nth-child(4)"
           ]
@@ -7277,7 +7277,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"b2\">8.74</span>",
+          "html": "<span class=\"price\" data-product-id=\"b2\">18.89</span>",
           "target": [
             "span[data-product-id=\"b2\"]"
           ]
@@ -7385,7 +7385,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"e1\">832.07</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"e1\">285.98</span></p>",
           "target": [
             ".product-card[data-category=\"electronics\"]:nth-child(3) > p:nth-child(4)"
           ]
@@ -7403,7 +7403,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"e1\">832.07</span>",
+          "html": "<span class=\"price\" data-product-id=\"e1\">285.98</span>",
           "target": [
             "span[data-product-id=\"e1\"]"
           ]
@@ -7511,7 +7511,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"e2\">818.90</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"e2\">136.88</span></p>",
           "target": [
             ".product-card[data-category=\"electronics\"]:nth-child(4) > p:nth-child(4)"
           ]
@@ -7529,7 +7529,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"e2\">818.90</span>",
+          "html": "<span class=\"price\" data-product-id=\"e2\">136.88</span>",
           "target": [
             "span[data-product-id=\"e2\"]"
           ]
@@ -7637,7 +7637,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"c1\">78.95</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"c1\">76.72</span></p>",
           "target": [
             ".product-card[data-category=\"clothing\"]:nth-child(5) > p:nth-child(4)"
           ]
@@ -7655,7 +7655,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"c1\">78.95</span>",
+          "html": "<span class=\"price\" data-product-id=\"c1\">76.72</span>",
           "target": [
             "span[data-product-id=\"c1\"]"
           ]
@@ -7691,7 +7691,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"product-card\" data-category=\"clothing\">\n  <div class=\"product-image\">👕 Clothing Image</div>\n  <h3>Winter Jacket</h3>\n  <p>Stay warm and stylish with this insulated jacket.</p>\n  <p>Price: $<span class=\"price\" data-product-id=\"c2\">83.31</span></p>\n  <button>Add to Cart</button>\n</div>",
+          "html": "<div class=\"product-card\" data-category=\"clothing\">\n  <div class=\"product-image\">👕 Clothing Image</div>\n  <h3>Winter Jacket</h3>\n  <p>Stay warm and stylish with this insulated jacket.</p>\n  <p>Price: $<span class=\"price\" data-product-id=\"c2\">29.04</span></p>\n  <button>Add to Cart</button>\n</div>",
           "target": [
             ".product-card[data-category=\"clothing\"]:nth-child(6)"
           ]
@@ -7763,7 +7763,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Price: $<span class=\"price\" data-product-id=\"c2\">83.31</span></p>",
+          "html": "<p>Price: $<span class=\"price\" data-product-id=\"c2\">29.04</span></p>",
           "target": [
             ".product-card[data-category=\"clothing\"]:nth-child(6) > p:nth-child(4)"
           ]
@@ -7781,7 +7781,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"price\" data-product-id=\"c2\">83.31</span>",
+          "html": "<span class=\"price\" data-product-id=\"c2\">29.04</span>",
           "target": [
             "span[data-product-id=\"c2\"]"
           ]
