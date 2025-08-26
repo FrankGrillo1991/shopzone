@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>axe Accessibility Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    h1 { color: #232F3E; }
+    .violation { border: 1px solid #e74c3c; background: #fff0f0; margin-bottom: 1em; padding: 1em; border-radius: 8px; }
+    .violation h2 { color: #e74c3c; margin-top: 0; }
+    .impact { font-weight: bold; }
+    .nodes { margin-top: 0.5em; }
+    .node { margin-bottom: 0.5em; }
+    code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>axe Accessibility Report</h1>
+  <p>Generated: 8/25/2025, 10:27:50 PM</p>
+  <h2>Violations (2)</h2>
+<div class="violation">
+    <h2>1. Form elements should have a visible label</h2>
+    <div class="impact">Impact: serious</div>
+    <div>Description: Ensures that every form element is not solely labeled using the title or aria-describedby attributes</div>
+    <div>Help: <a href="https://dequeuniversity.com/rules/axe/3.5/label-title-only?application=axe-puppeteer" target="_blank">https://dequeuniversity.com/rules/axe/3.5/label-title-only?application=axe-puppeteer</a></div>
+    <div class="nodes">
+      <strong>Affected Nodes (5):</strong>
+      <ul><li class="node"><code>.search-dropdown</code></li><li class="node"><code>input</code></li><li class="node"><code>select[title=&quot;Language&quot;]</code></li><li class="node"><code>select[title=&quot;Currency&quot;]</code></li><li class="node"><code>select[title=&quot;Country&quot;]</code></li></ul>
+    </div>
+  </div><div class="violation">
+    <h2>2. Page must contain a level-one heading</h2>
+    <div class="impact">Impact: moderate</div>
+    <div>Description: Ensure that the page, or at least one of its frames contains a level-one heading</div>
+    <div>Help: <a href="https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=axe-puppeteer" target="_blank">https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=axe-puppeteer</a></div>
+    <div class="nodes">
+      <strong>Affected Nodes (1):</strong>
+      <ul><li class="node"><code>html</code></li></ul>
+    </div>
+  </div></body>
+</html>
