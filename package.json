@@ -15,5 +15,8 @@
     "express": "^5.1.0",
     "puppeteer": "^24.17.0",
     "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "lighthouse": "^12.8.1"
   }
 }
