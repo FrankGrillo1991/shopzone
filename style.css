@@ -1,4 +1,16 @@
 @media (max-width: 320px) {
+    /* ...existing mobile styles... */
+    .carousel .arrow {
+        font-size: 2rem;
+        padding: 0.75rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        min-width: 2.5rem;
+        min-height: 2.5rem;
+        line-height: 1;
+    }
+}
+@media (max-width: 320px) {
     .site-header nav, .site-header .hero-content {
         flex-direction: column;
         align-items: stretch;
