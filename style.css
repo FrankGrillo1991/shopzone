@@ -454,20 +454,26 @@ nav {
 }
 
 .footer-links {
-    height: auto; /* Changed to auto for flexible height */
-    padding: 3rem 0; /* Added padding */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: #232F3E;
-    color: white;
-    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+    align-items: flex-start;
+    width: 100%;
+    background: #232F3E;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2.5rem 0 1.5rem 0;
+    margin: 32px 0 0 0;
+    gap: 2.5rem;
 }
 
 .footer-links ul {
-    margin-top: 0; /* Removed top margin, padding handles spacing */
-    margin-bottom: 2rem; /* Add bottom margin for spacing when wrapped */
-    min-width: 150px; /* Ensure columns don't get too narrow */
-    list-style-type: none; /* Remove bullets from footer links */
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    min-width: 180px;
+    max-width: 240px;
+    flex: 1 1 180px;
 }
 
 .footer-links ul p {
@@ -477,9 +483,11 @@ nav {
 
 .footer-links ul a {
     display: block;
-    font-size: .7rem;
+    font-size: 0.97rem;
     color: #dddddd;
-    margin-top: .5rem; /* Smaller margin for links */
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.2s;
     cursor: pointer;
 }
 
@@ -645,11 +653,11 @@ nav {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     width: 40px;
     height: 40px;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-.slide .arrow.left {
-    left: 16px;
+    font-size: 1.1rem;
+    color: #FFD700;
+    margin-bottom: 8px;
+    display: block;
+    letter-spacing: 0.5px;
 }
 .slide .arrow.right {
     right: 16px;
