@@ -1,18 +1,12 @@
-/* Site Header Overlay Styles */
-.site-header {
-    position: relative;
-    background: url("images/hero.jpg") center/cover no-repeat;
-    color: #fff;
-    min-height: 50vh;
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
 }
+.site-header * { position: relative; z-index: 2; }
 
-.site-header .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-    z-index: 1;
-    pointer-events: none;
-}
 
 .site-header nav,
 .site-header .hero-content {
