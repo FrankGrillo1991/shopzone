@@ -192,9 +192,24 @@ body {
 
 @media (max-width: 900px) {
     .footer-links {
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    -ms-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         gap: 24px;
         padding: 24px 0 12px 0;
     .footer-links ul {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    -ms-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         min-width: 160px;
         max-width: 200px;
         padding-right: 0;
@@ -444,9 +459,10 @@ nav {
     }
 
     @media (min-width: 900px) {
-        .footer-links {
-            grid-template-columns: repeat(3, 1fr);
-        }
+            .footer-links {
+                grid-template-columns: repeat(3, 1fr);
+                -ms-grid-columns: 1fr 1fr 1fr;
+            }
     }
 }
 
