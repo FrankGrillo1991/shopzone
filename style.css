@@ -72,12 +72,11 @@
     overflow: hidden;
 }
 
-.site-header .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,.45);
-    z-index: 1;
-    pointer-events: none;
+.site-header .overlay { 
+    position: absolute; 
+    inset: 0; 
+    background: rgba(0,0,0,.45); z-index: 1; 
+    pointer-events: none; 
 }
 
 .site-header nav, .site-header .hero-content {
