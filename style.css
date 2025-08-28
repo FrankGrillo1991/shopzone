@@ -637,7 +637,6 @@ nav {
     font-size: 1.1rem;
     color: #FFD700;
     margin-bottom: 8px;
-    display: block;
     letter-spacing: 0.5px;
 }
 .slide .arrow.right {
@@ -902,6 +901,52 @@ nav {
     .product-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+.slide .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.slice .arrow {
+    display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+z-index: 2;
+background: #fff;
+border-radius: 50%;
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+width: 40px;
+height: 40px;
+font-size: 1.1rem;
+color: #FFD700;
+margin-bottom: 8px;
+letter-spacing: 0.5px;
+}
+
+.slide .content img {
+    display: block;
+margin: 0 auto;
+max-width: 100%;
+width: 100%;
+height: auto;
+object-fit: cover;
+border-radius: 8px;
 }
 
 
