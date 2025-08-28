@@ -149,27 +149,6 @@ body {
     box-shadow: 0 4px 16px rgba(0,0,0,0.10);
     outline: none;
 }
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 48px;
-    margin: 40px 0 20px 0;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 100%;
-    background: #131921;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    padding: 32px 0 16px 0;
-}
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px 0;
-    min-width: 220px;
-    max-width: 260px;
-    flex: 1 1 220px;
-}
 .footer-links li {
     margin-bottom: 14px;
 }
