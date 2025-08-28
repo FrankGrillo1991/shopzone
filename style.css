@@ -208,14 +208,14 @@
 
 @media (max-width: 900px) {
     .footer-links {
-    border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 12px;
     -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     -ms-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         gap: 24px;
         padding: 24px 0 12px 0;
     }
@@ -223,14 +223,14 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-radius: 20px;
     -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     -ms-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         min-width: 160px;
         max-width: 200px;
         padding-right: 0;
