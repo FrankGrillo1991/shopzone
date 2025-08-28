@@ -972,5 +972,10 @@ object-fit: cover;
 border-radius: 8px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .site-header .overlay { background: rgba(0,0,0,.35); }
+}
+
+
 
 
