@@ -108,6 +108,7 @@
 }
 
 
+
 /* Dropdown Styles for Navbar */
 .dropdown {
     position: relative;
@@ -147,22 +148,27 @@
     background: #FFD700;
     color: #232F3E;
 }
+
 /* Navbar Styles */
+.nav-link, .filter-btn {
     cursor: pointer;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     outline: none;
     margin: 4px 0;
     letter-spacing: 0.2px;
 }
+
 .filter-btn:hover, .filter-btn:focus {
     background: #485769;
     color: #FFD700;
     box-shadow: 0 4px 16px rgba(0,0,0,0.10);
     outline: none;
 }
+
 .footer-links li {
     margin-bottom: 14px;
 }
+
 .footer-btn {
     display: flex;
     align-items: center;
@@ -174,7 +180,6 @@
     text-decoration: none;
     font-size: 1rem;
     transition: background 0.2s, color 0.2s;
-    border: none;
     outline: none;
     cursor: pointer;
     box-shadow: 0 1px 4px rgba(0,0,0,0.04);
@@ -203,24 +208,25 @@
 
 @media (max-width: 900px) {
     .footer-links {
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    -ms-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        -ms-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         gap: 24px;
         padding: 24px 0 12px 0;
+    }
     .footer-links ul {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    -ms-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        -ms-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         min-width: 160px;
         max-width: 200px;
         padding-right: 0;
