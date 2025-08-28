@@ -257,7 +257,7 @@
         padding: 7px 12px;
     }
 }
-}
+
 
 .nav-right {
     gap: 1rem;
@@ -385,7 +385,7 @@ nav {
     margin-left: 8px;
 }
 /* ...existing code... */
-}
+
 
 /* Unify card styles: .product-card and .item-card */
 .product-card, .item-card {
@@ -479,7 +479,7 @@ nav {
                 -ms-grid-columns: 1fr 1fr 1fr;
             }
     }
-}
+
 
 .footer-links ul {
     list-style: none;
