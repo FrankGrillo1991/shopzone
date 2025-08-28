@@ -1,3 +1,31 @@
+/* Modern responsive product grid */
+.products-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, 240px);
+    justify-content: center;
+}
+
+.product-card {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.product-card .actions {
+    margin-top: auto;
+    padding: .75rem 1rem 1rem;
+}
 @media (max-width: 600px) {
     .footer-links {
         grid-template-columns: 1fr;
@@ -85,68 +113,6 @@
     color: #232F3E;
 }
 /* Navbar Styles */
-.navbar {
-    width: 100%;
-    background: rgba(34, 40, 49, 0.85);
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 0;
-}
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-}
-.navbar li {
-    display: inline-block;
-}
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    transition: background 0.2s, color 0.2s;
-}
-.navbar a:hover, .navbar a:focus {
-    background: #FFD700;
-    color: #222831;
-}
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-body {
-/* ...existing code... */
-/* Filter Buttons Styling */
-.filter-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin: 18px 0;
-    background: none;
-    border-radius: 0;
-    padding: 0;
-    box-shadow: none;
-}
-
-.filter-btn {
-    background: #37475A;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 18px;
-    font-size: 1rem;
-    font-weight: 500;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
     cursor: pointer;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     outline: none;
