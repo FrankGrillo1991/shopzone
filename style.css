@@ -785,60 +785,57 @@ nav {
         margin: 0 .3rem;
     }
 
-@media screen and (max-width: 500px) {
+
+.product-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (max-width: 500px) {
     .shopzone-logo {
         font-size: 18px;
     }
     .shopzone-logo .shopzone-icon {
         font-size: 0.8em;
     }
-
     .carousel {
         height: 180px;
         min-height: 120px;
         align-items: flex-end;
     }
-
     .carousel .slides-container {
         height: 100%;
     }
-
     .slide .content img {
         height: 100%;
         width: 100%;
         object-fit: cover;
         border-radius: 8px;
     }
-
     .slide .arrow {
         scale: 1.2;
         padding: 6px;
         margin: 0.5rem;
         font-size: 1.2rem;
     }
-
     .carousel .text {
         font-size: 0.8rem;
         padding: 0.5rem;
         margin-bottom: 0.5rem;
     }
-
     .item-card {
         font-size: .9rem;
     }
-
     .item-card img {
         height: 180px;
     }
-
     .cta-section, .newsletter {
-        height: 250px; /* Smaller height for banners */
+        height: 250px;
         padding: 0 15px;
     }
     .cta-section .content, .newsletter .content {
-        width: 95%; /* Wider content area */
+        width: 95%;
     }
-
     .filter-buttons {
         display: flex;
         flex-wrap: wrap;
@@ -878,28 +875,23 @@ nav {
     }
 }
 
-.product-grid {
-    display: grid;
-    gap: 1rem;
-}
-
 @media (min-width: 320px) {
     .product-grid {
         grid-template-columns: 1fr;
-    } /* mobile 1 column */
+    }
 }
 
 @media (min-width: 640px) {
     .product-grid {
         grid-template-columns: 1fr 1fr;
-    } /* tablet 2 columns */
+    }
 }
 
 @media (min-width: 1024px) {
     .product-grid {
         grid-template-columns: repeat(4, 1fr);
-    } /* desktop 4 columns */
-} 
+    }
+}
 
 
 
