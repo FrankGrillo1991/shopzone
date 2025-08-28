@@ -788,6 +788,11 @@ nav {
         height: auto;
         padding: 10px;
     }
+    .policies p {
+        text-align: center;
+        margin: 0.5rem 0 0 0;
+        width: 100%;
+    }
     .pages a {
         margin: 0 .3rem;
     }
