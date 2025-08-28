@@ -830,7 +830,7 @@ nav {
     } /* desktop 4 columns */
 } 
 
-.header-overlay {
+header .header-overlay {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.01);
