@@ -194,7 +194,6 @@ body {
     .footer-links {
         gap: 24px;
         padding: 24px 0 12px 0;
-    }
     .footer-links ul {
         min-width: 160px;
         max-width: 200px;
@@ -433,17 +432,22 @@ nav {
 }
 
 .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 100%;
-    background: #232F3E;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    padding: 2.5rem 0 1.5rem 0;
-    margin: 32px 0 0 0;
-    gap: 2.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        width: 100%;
+        background: #232F3E;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        padding: 2.5rem 0 1.5rem 0;
+        margin: 32px 0 0 0;
+    }
+
+    @media (min-width: 900px) {
+        .footer-links {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 }
 
 .footer-links ul {
