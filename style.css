@@ -476,6 +476,7 @@ nav {
 }
 
 .footer-links ul p {
+    text-align: center;
     font-weight: bold;
     margin-bottom: 1rem; /* Space below heading */
 }
