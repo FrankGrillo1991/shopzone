@@ -830,29 +830,28 @@ nav {
     } /* desktop 4 columns */
 } 
 
+
 .header-container {
-  position: relative;
-  /* ...other styles... */
+    position: relative;
+    /* ...other styles... */
 }
 
+
 .header-overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5); /* Black with 50% opacity */
-  z-index: 1;
-  pointer-events: none; /* Allows clicks to pass through */
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); /* Black with 50% opacity */
+    z-index: 1;
+    pointer-events: none; /* Allows clicks to pass through */
 }
+
 
 .header-container > *:not(.header-overlay) {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
-.header-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.01);
-    z-index: 0;
-}
+
+/* Removed duplicate/conflicting .header-overlay rule */
 
 
