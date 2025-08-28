@@ -835,6 +835,7 @@ nav {
     inset: 0;
     background: rgba(0, 0, 0, 0.01);
     z-index: 1000;
+    pointer-events: none;
 }
 
 
