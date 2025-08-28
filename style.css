@@ -257,10 +257,8 @@
         padding: 7px 12px;
     }
 }
-    flex: 1;
-    justify-content: center;
-    gap: 1rem;
 }
+
 .nav-right {
     gap: 1rem;
 }
@@ -587,65 +585,23 @@ nav {
     margin: 0 auto 24px auto;
 }
 
+
 .carousel {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.carousel .slides-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.carousel .slide {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.carousel .slide .content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel .slide img {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    object-fit: cover;
-}
-.carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 24px auto;
     width: 100%;
     max-width: 1100px;
+    margin: 0 auto 24px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
 }
 
 .carousel .slides-container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     position: relative;
 }
 
@@ -830,7 +786,6 @@ nav {
     }
 
 @media screen and (max-width: 500px) {
-@media screen and (max-width: 500px) {
     .shopzone-logo {
         font-size: 18px;
     }
@@ -948,4 +903,3 @@ nav {
 
 
 
-}
