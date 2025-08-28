@@ -1,13 +1,20 @@
 @media (max-width: 320px) {
-    /* ...existing mobile styles... */
+    /* ...existing code... */
     .carousel .arrow {
-        font-size: 2rem;
-        padding: 0.75rem;
-        width: 2.5rem;
-        height: 2.5rem;
-        min-width: 2.5rem;
-        min-height: 2.5rem;
+        padding: 0.2rem 0.3rem;
+        font-size: 1rem;
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+        min-height: 28px;
         line-height: 1;
+        border-radius: 50%;
+        background: rgba(0,0,0,0.4);
+        color: #fff;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+    }
+    .carousel .arrow i {
+        font-size: 1rem;
     }
 }
 @media (max-width: 320px) {
