@@ -257,6 +257,24 @@
     </footer>
 
     <script>
+
+let cartCount = 0;
+document.querySelectorAll('.cart-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    cartCount++;
+    document.querySelector('.cart-count').textContent = cartCount;
+    localStorage.setItem('cartCount', cartCount);
+  });
+});
+
+window.addEventListener('load', () => {
+  const saved = localStorage.getItem('cartCount');
+  if (saved) {
+    cartCount = parseInt(saved);
+    document.querySelector('.cart-count').textContent = cartCount;
+  }
+});
+
 // Slideshow movement logic
 document.addEventListener('DOMContentLoaded', function() {
   const slides = document.querySelectorAll('.carousel .slide');
