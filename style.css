@@ -1,3 +1,37 @@
+/* Filter Buttons Styling */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 18px 0;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+.filter-btn {
+    background: #37475A;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    outline: none;
+    margin: 4px 0;
+    letter-spacing: 0.2px;
+}
+.filter-btn:hover, .filter-btn:focus {
+    background: #485769;
+    color: #FFD700;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    outline: none;
+}
 /* Modern responsive product grid */
 .products-grid {
     display: grid;
