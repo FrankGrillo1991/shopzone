@@ -1,3 +1,76 @@
+/* Dropdown Styles for Navbar */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #232F3E;
+    min-width: 180px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 0 0 8px 8px;
+    z-index: 10;
+    padding: 0.5em 0;
+}
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+.dropdown-item {
+    color: #fff;
+    padding: 0.5em 1.2em;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    background: #FFD700;
+    color: #232F3E;
+}
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background: rgba(34, 40, 49, 0.85);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    display: inline-block;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+.navbar a:hover, .navbar a:focus {
+    background: #FFD700;
+    color: #222831;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -829,5 +902,29 @@ nav {
         grid-template-columns: repeat(4, 1fr);
     } /* desktop 4 columns */
 } 
+
+
+.header-container {
+    position: relative;
+    /* ...other styles... */
+}
+
+
+.header-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); /* Black with 50% opacity */
+    z-index: 1;
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+
+.header-container > *:not(.header-overlay) {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Removed duplicate/conflicting .header-overlay rule */
 
 
