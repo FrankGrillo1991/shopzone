@@ -1,3 +1,52 @@
+@media (max-width: 320px) {
+    .site-header nav, .site-header .hero-content {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.5rem;
+    }
+    .nav-center, .nav-left, .nav-right {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    .search-box, .search-dropdown {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .carousel img {
+        width: 100vw;
+        height: auto;
+        max-width: 100%;
+    }
+    .filter-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    .product-card {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.5rem;
+    }
+    .footer-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+    .country-info, .policies {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+    .pages a {
+        display: block;
+        margin: 0.25rem 0;
+    }
+}
 /* Site header overlay and stacking context */
 .site-header {
     position: relative;
