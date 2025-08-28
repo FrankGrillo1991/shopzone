@@ -320,6 +320,26 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  // Filter button functionality
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const productCards = document.querySelectorAll('.product-card');
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Remove 'active' from all buttons
+      filterButtons.forEach(b => b.classList.remove('active'));
+      // Add 'active' to clicked button
+      this.classList.add('active');
+      const category = this.getAttribute('data-category');
+      productCards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
 });
 </script>
 </body>
