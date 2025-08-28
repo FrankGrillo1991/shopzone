@@ -257,26 +257,23 @@
     </footer>
 
     <script>
-
-let cartCount = 0;
-document.querySelectorAll('.cart-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    cartCount++;
-    document.querySelector('.cart-count').textContent = cartCount;
-    localStorage.setItem('cartCount', cartCount);
+document.addEventListener('DOMContentLoaded', function() {
+  // Cart functionality
+  let cartCount = 0;
+  document.querySelectorAll('.cart-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      cartCount++;
+      document.querySelector('.cart-count').textContent = cartCount;
+      localStorage.setItem('cartCount', cartCount);
+    });
   });
-});
-
-window.addEventListener('load', () => {
   const saved = localStorage.getItem('cartCount');
   if (saved) {
     cartCount = parseInt(saved);
     document.querySelector('.cart-count').textContent = cartCount;
   }
-});
 
-// Slideshow movement logic
-document.addEventListener('DOMContentLoaded', function() {
+  // Slideshow movement logic
   const slides = document.querySelectorAll('.carousel .slide');
   let current = 0;
   function showSlide(idx) {
@@ -297,10 +294,8 @@ document.addEventListener('DOMContentLoaded', function() {
       showSlide(current);
     });
   });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Existing price update and filter logic
+  // Price update logic
   function getRandomPrice(category) {
     switch (category) {
       case 'books': return (5 + Math.random() * 15).toFixed(2);
@@ -327,24 +322,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   updatePrices();
   setInterval(updatePrices, 5000);
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const allProductCards = document.querySelectorAll('.product-card');
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const category = button.getAttribute('data-category');
-      allProductCards.forEach(card => {
-        const cardCategory = card.getAttribute('data-category');
-        if (category === 'all' || cardCategory === category) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
   // Filter functionality for product cards
   const filterButtons = document.querySelectorAll('.filter-btn');
   const allProductCards = document.querySelectorAll('.product-card');
