@@ -1,3 +1,37 @@
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background: rgba(34, 40, 49, 0.85);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    display: inline-block;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+.navbar a:hover, .navbar a:focus {
+    background: #FFD700;
+    color: #222831;
+}
 * {
     box-sizing: border-box;
     margin: 0;
