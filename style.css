@@ -1,3 +1,42 @@
+/* Dropdown Styles for Navbar */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #232F3E;
+    min-width: 180px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 0 0 8px 8px;
+    z-index: 10;
+    padding: 0.5em 0;
+}
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+.dropdown-item {
+    color: #fff;
+    padding: 0.5em 1.2em;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    background: #FFD700;
+    color: #232F3E;
+}
 /* Navbar Styles */
 .navbar {
     width: 100%;
