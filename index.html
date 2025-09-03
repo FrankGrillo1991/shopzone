@@ -258,7 +258,7 @@
 
     <script>
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM fully loaded and parsed');
+  // console.log('DOM fully loaded and parsed');
   // Cart functionality
   let cartCount = 0;
   document.querySelectorAll('.cart-btn').forEach(btn => {
@@ -266,14 +266,14 @@ document.addEventListener('DOMContentLoaded', function() {
       cartCount++;
       document.querySelector('.cart-count').textContent = cartCount;
       localStorage.setItem('cartCount', cartCount);
-      console.log('Cart button clicked. Cart count:', cartCount);
+  // console.log('Cart button clicked. Cart count:', cartCount);
     });
   });
   const saved = localStorage.getItem('cartCount');
   if (saved) {
     cartCount = parseInt(saved);
     document.querySelector('.cart-count').textContent = cartCount;
-    console.log('Loaded cart count from localStorage:', cartCount);
+  // console.log('Loaded cart count from localStorage:', cartCount);
   }
 
   // Slideshow movement logic
@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function() {
     slides.forEach((slide, i) => {
       slide.style.display = (i === idx) ? 'block' : 'none';
     });
-    console.log('Showing slide', idx + 1);
+  // console.log('Showing slide', idx + 1);
   }
   showSlide(current);
   slides.forEach((slide, i) => {
@@ -291,13 +291,13 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       current = (i + 1) % slides.length;
       showSlide(current);
-      console.log('Next slide clicked. Current slide:', current + 1);
+  // console.log('Next slide clicked. Current slide:', current + 1);
     });
     slide.querySelector('.prev').addEventListener('click', function(e) {
       e.preventDefault();
       current = (i - 1 + slides.length) % slides.length;
       showSlide(current);
-      console.log('Previous slide clicked. Current slide:', current + 1);
+  // console.log('Previous slide clicked. Current slide:', current + 1);
     });
   });
 
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (priceSpan) {
         const newPrice = getRandomPrice(category);
         priceSpan.textContent = newPrice;
-        console.log('Updated price for', category, 'to', newPrice);
+  // console.log('Updated price for', category, 'to', newPrice);
       }
     });
     document.querySelectorAll('.item-card').forEach(card => {
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (priceSpan) {
         const newPrice = getRandomPrice(category);
         priceSpan.textContent = newPrice;
-        console.log('Updated price for', category, 'to', newPrice);
+  // console.log('Updated price for', category, 'to', newPrice);
       }
     });
   }
@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Add 'active' to clicked button
       this.classList.add('active');
       const category = this.getAttribute('data-category');
-      console.log('Filter button clicked. Category:', category);
+  // console.log('Filter button clicked. Category:', category);
       productCards.forEach(card => {
         if (category === 'all' || card.getAttribute('data-category') === category) {
           card.style.display = '';
